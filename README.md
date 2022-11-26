@@ -5,4 +5,16 @@ Roach PHP is a complete web scraping toolkit for PHP. Not only does it handle th
 
 https://roach-php.dev/docs/introduction/
 
+Instead of installing the core Roach package, we are going to install Roach’s Laravel adapter.
+
+```
+composer require roach-php/laravel
+```
+We can also publish the configuration file that comes with the package.
+
+```
+php artisan vendor:publish --provider='RoachPHP\Laravel\RoachServiceProvider'
+```
+This will publish a roach.php configuration file to our app’s config folder.
+
 ![Screenshot 2022-11-26 111342](https://user-images.githubusercontent.com/67253461/204074364-54b663f7-eb24-4469-8846-d3acd6fa29ea.png)
